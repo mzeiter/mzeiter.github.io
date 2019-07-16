@@ -76,6 +76,18 @@ ul li.active a{
 	transform: translate(-50%, -50%);
 }
 
+.social_media{
+	position: absolute;
+	top: 95%;
+	left: 8%;
+	transform: translate(-50%, -50%);
+}
+
+.social_media img{
+	width: 45px;
+	height: 45px;
+}
+
 .btn{
 	border: 1px solid #fff;
 	padding: 10px 30px;
