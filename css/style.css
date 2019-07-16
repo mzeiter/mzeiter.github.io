@@ -63,6 +63,12 @@ ul li.active a{
 
 }
 
+.title p{
+	color: #fff;
+	font-size: 35px;
+
+}
+
 .button{
 	position: absolute;
 	top: 62%;
