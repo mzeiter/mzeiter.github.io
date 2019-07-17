@@ -102,6 +102,17 @@ ul li.active a{
 }
 
 
+.title img{
+	width: 120px;
+	height: 120px;
+	position: relative;
+	left: 50%;
+}
+
+.contact_info h1{
+	text-align: center;
+}
+
 
 /* Added these for sample API styling */
 
