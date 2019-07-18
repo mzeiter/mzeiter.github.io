@@ -11,6 +11,14 @@ header{
 	background-position: center;
 }
 
+body{
+	background-color: #000000;
+}
+
+.spacer{
+	margin: 15px;
+}
+
 ul{
 	float: right;
 	list-style-type: none;
@@ -40,9 +48,11 @@ ul li.active a{
 }
 
 .logo img{
-	float: left;
+	position: absolute;
+	left: 5%;
 	width: 100px;
 	height: 100px;
+
 }
 
 .main{
@@ -106,7 +116,7 @@ ul li.active a{
 	width: 120px;
 	height: 120px;
 	position: relative;
-	left: 50%;
+	left: 44%;
 }
 
 .contact_info h1{
