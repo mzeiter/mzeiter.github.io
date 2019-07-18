@@ -178,9 +178,9 @@ ul li.active a{
 }
 .card h1 {
 	text-align: center;
-	padding: 1.5rem 2.5rem;
+	padding: 1rem 2.5rem; 
 	background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
-	margin: 0 0 0 0;
+	margin: 0 auto;
 	font-size: 1.5rem;
 	color: white;
 }
@@ -193,7 +193,9 @@ ul li.active a{
 
 .card img{
 	display: block;
-    margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: .5rem;
 	width: 45px;
 	height: 45px;
 }
