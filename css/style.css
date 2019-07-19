@@ -75,10 +75,19 @@ ul li.active a{
 }
 
 .title{
-	position: absolute;
+	/* position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); */
+	
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	/* min-height: 45vh; */
+	padding-top: 45vh;
 }
 
 .title h1{
@@ -94,10 +103,14 @@ ul li.active a{
 }
 
 .button{
-	position: absolute;
-	top: 62%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 2vh;
 }
 
 .social_media{
@@ -119,6 +132,7 @@ ul li.active a{
 	color: #fff;
 	text-decoration: none;
 	transition: 0.6s ease;
+	margin: 5px;
 }
 
 .btn:hover{
@@ -128,10 +142,8 @@ ul li.active a{
 
 
 .title img{
-	position: relative;
-	width: 120px;
+ 	width: 120px;
 	height: 120px;
-	left: 44%;
 }
 
 .contact_info h1{
