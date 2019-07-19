@@ -25,14 +25,10 @@ body{
 	margin: 15px;
 }
 
-/*.spacer_coin{
-	display: block;
-  	max-width: 100%;
-  	margin-top: 100px;
-}*/
-
 ul{
 	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
 	right: 5%;
 	list-style-type: none;
 	margin-top: 25px;
@@ -86,13 +82,13 @@ ul li.active a{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	/* min-height: 45vh; */
 	padding-top: 45vh;
 }
 
 .title h1{
 	color: #fff;
-	font-size: 70px;
+	font-size: 80px;
+	transition: 2s ease-out;
 
 }
 
