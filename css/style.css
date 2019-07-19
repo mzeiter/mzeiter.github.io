@@ -147,18 +147,22 @@ ul li.active a{
 }
 
 .container {
-
- 	display: flex;
- 	position: absolute;
- 	top: 15%;
- 	left: 0%;
-  	flex-wrap: wrap;
-  	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 50vh;
+	padding-top: 15%;
 }
 
-.card {
- 	margin: 1rem;
-  	border: 1px solid gray;
+.card {	
+	margin: 1rem;
+	background: white;
+	box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+	border-radius: 12px;
+	overflow: hidden;
+	transition: all .2s linear;
 }
 
 @media screen and (min-width: 600px) {
