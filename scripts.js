@@ -42,13 +42,18 @@ request.send() */
 
 const app = document.getElementById('root')
 
+// const spacer = document.createElement('div')
+// spacer.setAttribute('class', 'spacer_coin')
+
+
 const container = document.createElement('div')
 container.setAttribute('class', 'container')
 
+// app.appendChild(spacer)
 app.appendChild(container)
 
 var request = new XMLHttpRequest()
-request.open('GET', 'https://api.coinranking.com/v1/public/coins?ids=1,7', true)
+request.open('GET', 'https://api.coinranking.com/v1/public/coins?ids=1,7,2,3,4,5,6,8,9', true)
 request.onload = function() {
   // Begin accessing JSON data here
   var json = JSON.parse(this.response)

@@ -7,22 +7,31 @@
 }
 
 header{
+	display: block;
+}
+/*changed from header */
+body{
 	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../wallpaper.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
 }
 
-body{
+/*body{
 	background-color: #000000;
-}
+}*/
 
 .spacer{
 	margin: 15px;
 }
 
+/*.spacer_coin{
+	display: block;
+  	max-width: 100%;
+  	margin-top: 100px;
+}*/
+
 ul{
-	/*float: right;*/
 	position: absolute;
 	right: 5%;
 	list-style-type: none;
@@ -60,6 +69,7 @@ ul li.active a{
 }
 
 .main{
+	display: block;
 	max-width: 1200px;
 	margin: auto;
 }
@@ -132,46 +142,52 @@ ul li.active a{
 /* Added these for sample API styling */
 
 #root {
-	position: absolute;
-	top: 40%;
-	left:37%;
-	min-width: 500px;
-  max-width: 1200px;
-  margin: 0 auto;
+	max-width: 1200px;
+  	margin: 0 auto;
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
+
+ 	display: flex;
+ 	position: absolute;
+ 	top: 15%;
+ 	left: 0%;
+  	flex-wrap: wrap;
+  	margin: 0 auto;
 }
 
 .card {
-  margin: 1rem;
-  border: 1px solid gray;
+ 	margin: 1rem;
+  	border: 1px solid gray;
 }
 
 @media screen and (min-width: 600px) {
   .card {
-    flex: 1 1 calc(50% - 2rem);
+    	flex: 1 1 calc(50% - 2rem);
   }
 }
 
 @media screen and (min-width: 900px) {
   .card {
-    flex: 1 1 calc(33% - 2rem);
+    	flex: 1 1 calc(33% - 2rem);
   }
 }
 
+.card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -2px, 0);
+}
+
 .card:nth-child(2n) h1 {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+ 	 background-image: linear-gradient(120deg, #110d3d 0%, #0c008f 100%);
 }
 
 .card:nth-child(4n) h1 {
-  background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
+ 	 background-image: linear-gradient(120deg, #110d3d 0%, #0c008f 100%);
 }
 
 .card:nth-child(5n) h1 {
-  background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
+  	background-image: linear-gradient(120deg, #24b4ed 0%, #0b3342 100%);
 }
 
 .card{
@@ -180,7 +196,7 @@ ul li.active a{
 .card h1 {
 	text-align: center;
 	padding: 1rem 2.5rem; 
-	background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+	background-image: linear-gradient(120deg, #24b4ed 0%, #0b3342 100%);
 	margin: 0 auto;
 	font-size: 1.5rem;
 	color: white;
