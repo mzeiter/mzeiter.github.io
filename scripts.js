@@ -41,15 +41,9 @@ request.send() */
 
 
 const app = document.getElementById('root')
-
-// const spacer = document.createElement('div')
-// spacer.setAttribute('class', 'spacer_coin')
-
-
 const container = document.createElement('div')
 container.setAttribute('class', 'container')
 
-// app.appendChild(spacer)
 app.appendChild(container)
 
 var request = new XMLHttpRequest()
