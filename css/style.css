@@ -17,21 +17,46 @@ body{
 	background-position: center;
 }
 
-/*body{
+body{
 	background-color: #000000;
-}*/
+}
 
 .spacer{
 	margin: 15px;
 }
 
-ul{
+.main ul{
 	position: absolute;
 	display: flex;
 	flex-wrap: wrap;
 	right: 5%;
 	list-style-type: none;
 	margin-top: 25px;
+}
+#resume-topics {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 40vh;
+}
+#resume-topics ul{
+	list-style-type: none;
+	margin-top: 50px;
+}
+
+#resume-topics ul li{
+	display: block;
+}
+
+#resume-topics ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+	font-size: 50px;
 }
 
 ul li{
@@ -97,8 +122,6 @@ ul li.active a{
 }
 
 .button{
-
-	
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
