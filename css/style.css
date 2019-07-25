@@ -83,13 +83,17 @@ ul li.active a{
 	color: #fff;
 	font-size: 80px;
 	transition: 2s ease-out;
-
 }
 
 .title p{
 	color: #fff;
 	font-size: 35px;
+}
 
+.title.resume {
+	color: #fff;
+	font-size: 50px;
+	transition: 2s ease-out;
 }
 
 .button{
