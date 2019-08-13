@@ -1,4 +1,6 @@
 # mzeiter.github.io
-https://mzeiter.github.io/
 
-Personal website all about Mitchell Zeiter
+### Visit: www.mitchellzeiter.com
+
+Website that discusses personal and professional details about myself.
+
