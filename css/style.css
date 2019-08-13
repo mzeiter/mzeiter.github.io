@@ -6,6 +6,8 @@
 	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
 
+html{scroll-behavior:smooth}
+
 header{
 	display: block;
 }
@@ -144,6 +146,11 @@ ul li.active a{
 .social_media img{
 	width: 45px;
 	height: 45px;
+}
+
+.button img{
+	width: 15px;
+	height: 20px;
 }
 
 .btn{
