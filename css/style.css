@@ -127,6 +127,44 @@ ul li.active a{
 	transition: 2s ease-out;
 }
 
+#about{
+	display: flex;
+	flex-wrap: wrap;
+	/*justify-content: center;*/
+	align-items: center;
+	/*text-align: center;*/
+	margin-top: 55vh;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-bottom: 45vh;
+}
+
+#about p {
+	color: #fff;
+	font-size: 25px;
+}
+
+#about h2{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 5%;
+}
+
+.me_pic img{
+	margin-top: 5%;\
+	height: auto;
+	width: 25%;
+	transform: rotate(90deg); 
+}
+
+.me_pic h3{
+	color: #fff;
+	font-size: 10px;
+	margin-top: 3%;
+	margin-left: 3%
+}
+
+
 .button{
 	display: flex;
 	flex-wrap: wrap;
