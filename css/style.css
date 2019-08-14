@@ -20,7 +20,7 @@ body{
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
-    width: 100%;
+    width: 80%;
 }
 
 body{
@@ -31,7 +31,14 @@ body{
 	margin: 15px;
 }
 
-.main ul{
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  	position: fixed;
+    width: 100%;
+}
+
+#main ul{
 	position: absolute;
 	display: flex;
 	flex-wrap: wrap;
@@ -95,7 +102,7 @@ ul li.active a{
 
 }
 
-.main{
+#main{
 	display: block;
 	max-width: 1200px;
 	margin: auto;
@@ -108,6 +115,7 @@ ul li.active a{
 	align-items: center;
 	text-align: center;
 	padding-top: 45vh;
+	width: 125%;
 }
 
 .title h1{
@@ -128,42 +136,158 @@ ul li.active a{
 }
 
 #about{
-	display: flex;
+	display: inline-block;
 	flex-wrap: wrap;
 	/*justify-content: center;*/
 	align-items: center;
 	/*text-align: center;*/
 	margin-top: 55vh;
+	width: 105%;
 	padding-left: 10%;
 	padding-right: 10%;
 	margin-bottom: 45vh;
 }
 
-#about p {
-	color: #fff;
-	font-size: 25px;
-}
-
 #about h2{
 	color: #fff;
-	font-size: 65px;
+	font-size: 55px;
 	margin-bottom: 5%;
 }
 
-.me_pic img{
-	margin-top: 5%;\
-	height: auto;
-	width: 25%;
-	transform: rotate(90deg); 
+.side{
+	display: flex;
+	float: left;
 }
 
+#about p {
+	color: #fff;
+	font-size: 20px;
+	width: 50%;
+	float: left;
+/*	margin-bottom: 1%;
+*/}
+
+.side img{
+	margin-top: 5%;
+	margin-left: 20%;
+	height: 30%;
+	width: 30%;
+	transform: rotate(90deg); 
+	float: left;
+}
+/*
 .me_pic h3{
 	color: #fff;
 	font-size: 10px;
 	margin-top: 3%;
 	margin-left: 3%
+}*/
+
+
+#experience{
+	display: inline-block;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 55vh;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-bottom: 45vh;
+	width: 105%;
 }
 
+#experience h2{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 5%;
+}
+
+#experience h3{
+	color: #fff;
+	font-size: 30px;
+	margin-bottom: 5%;
+	width: 40%;
+}
+
+#experience p {
+	color: #fff;
+	font-size: 20px;
+	float: left;
+	margin-bottom: 5%;
+	/*margin-left: 30%;*/
+}
+
+#experience .left{
+	width: 30%;
+	float: left;
+}
+
+#experience .right{
+	float:left;
+	margin-left: 20%;
+	width: 30%;
+}
+
+#contact{
+	display: inline-block;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+	margin-top: 55vh;
+	padding-left: 30%;
+	padding-right: 30%;
+	margin-bottom: 45vh;
+	width: 65%;
+	/*margin-left: 10%;*/
+}
+
+#contact h2{
+	color: #fff;
+	font-size: 55px;
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+#contact p{
+	color: #fff;
+	font-size: 20px;
+	float: left;
+	margin-bottom: 5%;
+}
+
+.info a{
+	text-decoration: none;
+	color: white;
+	background-color: #3A4484;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	text-align: center;
+	width: 100%;
+}
+
+.info a:hover{
+	background-color: white;
+	color: black;
+}
+
+
+
+#footer{
+	width: 125%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 10vh;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	background-color: #12162C;
+}
+
+#footer p{
+	font-size: 15px;
+	color: white;
+}
 
 .button{
 	display: flex;
@@ -172,6 +296,7 @@ ul li.active a{
 	align-items: center;
 	text-align: center;
 	padding-top: 2vh;
+	width: 125%;
 }
 
 .social_media{
@@ -214,6 +339,23 @@ ul li.active a{
 .contact_info h1{
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* API page styling */

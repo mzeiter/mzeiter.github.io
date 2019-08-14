@@ -5,20 +5,33 @@
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+<!-- <script type="text/javascript">
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+  	var currentScrollPos = window.pageYOffset;
+  	if (prevScrollpos > currentScrollPos) {
+    	document.getElementById("main").style.top = "0";
+  	} else {
+    	document.getElementById("main").style.top = "-50px";
+  	}
+  	prevScrollpos = currentScrollPos;
+}
+</script> -->
 <body>
 	<!-- Navigation bar with MZ logo and section names -->
 	<header>
-		<div class="main">
+		<div id="main">
 			<div class="logo">
 				<a href="index.html"><img src="images/logo.png"/></a>
 			</div>
 			<ul>
 				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="#experience">Experience</a></li>
 				<li><a href="#about">Meet Mitch</a></li>
-				<li><a href="current.html">Cryptocurrency</a></li>
+				<li><a href="#experience">Experience</a></li>
 				<li><a href="#contact">Contact</a></li>
+				<li><a href="current.html">Cryptocurrency</a></li>
 			</ul>
 		</div>
 	</header>
@@ -37,20 +50,75 @@
 	<!-- About Me section -->
 	<div id="about">
 		<h2>About Me</h2>
-		<p>Hi, I'm Mitchell. I am currently a third-year computer science and engineering student
+		<div class="side">
+			<p>Hi, I'm Mitchell. I am currently a third-year computer science and engineering student
 			at The Ohio State University. This summer I spent my time working as a software engineer
-			intern at American Chemical Society, continuing to improve my software development skills. 
+			intern at American Chemical Society, continuing to improve my software development skills.
+			</p>
+			<img src="images/mara.jpeg"/>
+		</div>
+		<p>
 			While I'm not in front of a computer, I enjoy playing soccer, biking, and cooking!
 		</p>
-		<div class="me_pic">
-			<img src="images/mara.jpeg"/>
-			<h3>Me and my girlfriend drinking coffee</h3>
-		</div>
 		
+	</div>
+
+	<div id="experience">
+		<h2>Experience</h2>
+
+		<div>
+			<h3>Education</h3>
+		</div>
+
+		<div class="left">
+			<p>The Ohio State University</p>
+		</div>
+
+		<div class="right">
+			
+			<p>Expected Graduation:<br>December 2020</p>
+		</div>
+
+		<div>
+			<h3>Work Experience</h3>
+		</div>
+
+		<div class="left">
+			<p>Software Engineer Intern <br>@ American Chemical Society 
+			</p>
+		</div>
+		<div class="right">
+			<p> -Full-stack web development in Spring on existing web applications used by ACS customers worldwide.<br><br>
+				-Developed ETL mappings using Pentaho to extract data from multiple 
+				 source systems into one common data model.<br><br>
+				-Developed and executed test plans for developed solutions.<br><br>
+			</p>
+		</div>
+
+
+
+
+
+			
+			
 	</div>
 
 
 
+	<!-- Contact me section -->
+	<div id="contact">
+		<h2>Let's Get in Touch</h2>
+		<p>I'm currently a student right now seeking internship possibilities for Summer 2020. If you're interested in working with me, please contact me!</p>
+		<div class="info">
+			<a href = "mailto: mitchellzeiter@gmail.com">Send Email</a>
+		</div>
+	</div>
+
+
+	<!-- Footer at bottom of web page -->
+	<div id="footer">
+		<p>Designed & Built by Mitchell Zeiter</p>
+	</div>
 
 	<!-- LinkedIn and Github buttons that don't move -->
 	<div class="social_media">
@@ -58,5 +126,6 @@
 			&nbsp;
 			<a href="https://www.linkedin.com/in/mitchell-zeiter" target="_blank"><img src="images/LI-In-logo.png"/></a>
 	</div>
+	<script src="scripts.js"></script>
 </body>
 </html>
