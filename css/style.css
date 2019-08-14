@@ -11,12 +11,9 @@ html{scroll-behavior:smooth}
 header{
 	display: block;
 }
-/*changed from header */
+
 body{
 	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/blk_bg.jpg);
-	/*height: 100vh;
-	background-size: cover;
-	background-position: center;*/
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
@@ -31,39 +28,10 @@ body{
 	margin: 15px;
 }
 
-
-/*#resume-topics {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	padding-top: 40vh;
-}
-#resume-topics ul{
-	list-style-type: none;
-	margin-top: 50px;
-}
-
-#resume-topics ul li{
-	display: block;
-}
-
-#resume-topics ul li a{
-	text-decoration: none;
-	color: #fff;
-	padding: 5px 20px;
-	border: 1px solid transparent;
-	transition: 0.6s ease;
-	font-size: 50px;
-}*/
-
 #nav-bar ul{
-/*	position: absolute;
-*/	display: inline-block;
+	display: inline-block;
 	flex-wrap: wrap;
-/*	right: 5%;
-*/	list-style-type: none;
+	list-style-type: none;
 	margin-top: 25px;
 }
 
@@ -93,7 +61,7 @@ ul li.active a{
 	float: left;
 	width: 100px;
 	height: 80px;
-	margin-right: 35%;
+	margin-right: 50%;
 	margin-left: 2%;
 }
 
@@ -102,9 +70,7 @@ ul li.active a{
 	position: fixed;
 	display: inline-block;
 	max-width: 1200px;
-	/*margin: auto;*/
-/*	margin-left: 15%; 
-*/	z-index: 1000;
+	z-index: 1000;
 	float: left;
 	width: 100%;
 }
@@ -134,9 +100,7 @@ ul li.active a{
 .title h1{
 	color: #fff;
 	font-size: 80px;
-	transition: 2s ease-out;
-	/*background-color: #3A4484;
-	width: 100%;*/
+	transition: 2s ease-out;	
 }
 
 .title p{
@@ -153,9 +117,7 @@ ul li.active a{
 #about{
 	display: inline-block;
 	flex-wrap: wrap;
-	/*justify-content: center;*/
 	align-items: center;
-	/*text-align: center;*/
 	margin-top: 55vh;
 	width: 105%;
 	padding-left: 10%;
@@ -179,8 +141,7 @@ ul li.active a{
 	font-size: 20px;
 	width: 50%;
 	float: left;
-/*	margin-bottom: 1%;
-*/}
+}
 
 .side img{
 	margin-top: 5%;
@@ -190,13 +151,6 @@ ul li.active a{
 	transform: rotate(90deg); 
 	float: left;
 }
-/*
-.me_pic h3{
-	color: #fff;
-	font-size: 10px;
-	margin-top: 3%;
-	margin-left: 3%
-}*/
 
 
 #experience{
@@ -228,7 +182,6 @@ ul li.active a{
 	font-size: 20px;
 	float: left;
 	margin-bottom: 5%;
-	/*margin-left: 30%;*/
 }
 
 #experience .left{
@@ -252,7 +205,6 @@ ul li.active a{
 	padding-right: 30%;
 	margin-bottom: 45vh;
 	width: 65%;
-	/*margin-left: 10%;*/
 }
 
 #contact h2{
@@ -297,7 +249,6 @@ ul li.active a{
 	margin-top: 10vh;
 	padding-top: 4vh;
 	padding-bottom: 4vh;
-	/*background-color: #12162C;*/
 	background-color: #3A4484;
 }
 
@@ -314,7 +265,6 @@ ul li.active a{
 	text-align: center;
 	padding-top: 2vh;
 	width: 125%;
-	/*background-color: #3A4484;*/
 
 }
 
