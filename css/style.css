@@ -31,22 +31,8 @@ body{
 	margin: 15px;
 }
 
-.navbar-fixed {
-    top: 0;
-    z-index: 100;
-  	position: fixed;
-    width: 100%;
-}
 
-#main ul{
-	position: absolute;
-	display: flex;
-	flex-wrap: wrap;
-	right: 5%;
-	list-style-type: none;
-	margin-top: 25px;
-}
-#resume-topics {
+/*#resume-topics {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -70,6 +56,15 @@ body{
 	border: 1px solid transparent;
 	transition: 0.6s ease;
 	font-size: 50px;
+}*/
+
+#nav-bar ul{
+/*	position: absolute;
+*/	display: inline-block;
+	flex-wrap: wrap;
+/*	right: 5%;
+*/	list-style-type: none;
+	margin-top: 25px;
 }
 
 ul li{
@@ -94,19 +89,37 @@ ul li.active a{
 	color: #000;
 }
 
-.logo img{
-	position: absolute;
-	left: 5%;
+#nav-bar img{
+	float: left;
 	width: 100px;
-	height: 100px;
-
+	height: 80px;
+	margin-right: 35%;
+	margin-left: 2%;
 }
 
-#main{
-	display: block;
+@import "compass/css3";
+#nav-bar{
+	position: fixed;
+	display: inline-block;
 	max-width: 1200px;
-	margin: auto;
+	/*margin: auto;*/
+/*	margin-left: 15%; 
+*/	z-index: 1000;
+	float: left;
+	width: 100%;
 }
+
+#nav-bar.is-visible{
+	opacity: 1;
+    -webkit-transform: translate(0,0);
+    -webkit-transition: -webkit-transform .2s,background .3s,color .3s;
+}
+
+#nav-bar.is-hidden {
+    opacity: 0;
+    -webkit-transform: translate(0,-60px);
+    -webkit-transition: -webkit-transform .2s,background .3s,color .3s,opacity 0 .3s;
+  	}
 
 .title{
 	display: flex;
@@ -122,6 +135,8 @@ ul li.active a{
 	color: #fff;
 	font-size: 80px;
 	transition: 2s ease-out;
+	/*background-color: #3A4484;
+	width: 100%;*/
 }
 
 .title p{
@@ -271,6 +286,7 @@ ul li.active a{
 
 
 
+
 #footer{
 	width: 125%;
 	display: flex;
@@ -279,9 +295,10 @@ ul li.active a{
 	align-items: center;
 	text-align: center;
 	margin-top: 10vh;
-	padding-top: 5vh;
-	padding-bottom: 5vh;
-	background-color: #12162C;
+	padding-top: 4vh;
+	padding-bottom: 4vh;
+	/*background-color: #12162C;*/
+	background-color: #3A4484;
 }
 
 #footer p{
@@ -297,6 +314,8 @@ ul li.active a{
 	text-align: center;
 	padding-top: 2vh;
 	width: 125%;
+	/*background-color: #3A4484;*/
+
 }
 
 .social_media{

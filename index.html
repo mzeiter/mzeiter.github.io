@@ -7,25 +7,70 @@
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-<!-- <script type="text/javascript">
-	var prevScrollpos = window.pageYOffset;
-	window.onscroll = function() {
-  	var currentScrollPos = window.pageYOffset;
-  	if (prevScrollpos > currentScrollPos) {
-    	document.getElementById("main").style.top = "0";
-  	} else {
-    	document.getElementById("main").style.top = "-50px";
-  	}
-  	prevScrollpos = currentScrollPos;
-}
-</script> -->
+
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+
+/** ===========================================
+    Hide / show the master navigation menu
+============================================ */
+
+  // console.log('Window Height is: ' + $(window).height());
+  // console.log('Document Height is: ' + $(document).height());
+  
+   console.log('Window Height is: ' + $(window).height());
+  console.log('Document Height is: ' + $(document).height());
+
+  var previousScroll = 0;
+
+  $(window).scroll(function(){
+
+    var currentScroll = $(this).scrollTop();
+
+    /*
+      If the current scroll position is greater than 0 (the top) AND the current scroll position is less than the document height minus the window height (the bottom) run the navigation if/else statement.
+    */
+    if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()){
+      /*
+        If the current scroll is greater than the previous scroll (i.e we're scrolling down the page), hide the nav.
+      */
+      if (currentScroll > previousScroll){
+        window.setTimeout(hideNav, 300);
+      /*
+        Else we are scrolling up (i.e the previous scroll is greater than the current scroll), so show the nav.
+      */
+      } else {
+        window.setTimeout(showNav, 300);
+      }
+      /* 
+        Set the previous scroll value equal to the current scroll.
+      */
+      previousScroll = currentScroll;
+    }
+
+  });
+
+  function hideNav() {
+    $("[data-nav-status='toggle']").removeClass("is-visible").addClass("is-hidden");
+  }
+  function showNav() {
+    $("[data-nav-status='toggle']").removeClass("is-hidden").addClass("is-visible");
+  }
+
+});
+
+
+
+</script>
 <body>
 	<!-- Navigation bar with MZ logo and section names -->
 	<header>
-		<div id="main">
-			<div class="logo">
+		<div id="nav-bar"  data-nav-status="toggle">
+			<!-- <div class="logo"> -->
 				<a href="index.html"><img src="images/logo.png"/></a>
-			</div>
+			<!-- </div> -->
 			<ul>
 				<li class="active"><a href="index.html">Home</a></li>
 				<li><a href="#about">Meet Mitch</a></li>
@@ -37,15 +82,21 @@
 	</header>
 
 	<!-- Front of website -->
+	<div class="titleButtons"> 
+
 	<div class="title">
-		<h1>MITCHELL ZEITER</h1>
+		<h1>Mitchell Zeiter</h1>
 	</div>
 
 	<!-- Buttons under MITCHELL ZEITER -->
 	<div class="button">
 		<a href="resume.pdf" class="btn" target="_blank">Resume</a>
- 		<a href="about.html" class="btn">About Me</a>	
+ 		<a href="#about" class="btn">About Me</a>	
 	</div>
+
+
+	</div>
+	
 
 	<!-- About Me section -->
 	<div id="about">
