@@ -144,22 +144,37 @@ ul li a:hover{
 	letter-spacing: 0.1em;
 }
 
+/*Line used under "MITCHELL ZEITER"*/
 .line{
     display: block;
-    width: 290px;
     height: 3px;
     margin-top:3vh;
     margin-right: 48%;
     margin-left: 48%;
     background: #ccc;
     width:29%;
-
- /*   margin-right: 45%;
-    margin-left: 45%;
-    background: #ccc;
-    width: 35%;*/
-
     background-color: #fff;
+}
+
+/*Line used under "ABOUT ME"*/
+.line1{
+    display: block;
+    width: 16%;
+    margin-left: 42%;
+    margin-right: 42%;
+    height: 3px;
+    margin-bottom: 2vh;
+    background-color: red;
+}
+/*Line used under "EDUCATION"*/
+.line2{
+	display: block;
+    width: 16%;
+    margin-left: 42%;
+    margin-right: 42%;
+    height: 3px;
+    margin-bottom: 5vh;
+    background-color: red;
 }
 
 #about{
@@ -168,25 +183,38 @@ ul li a:hover{
 	align-items: center;
 	margin-top: 55vh;
 	width: 105%;
-	padding-left: 10%;
-/*	margin-left: 5%;
-*/	padding-right: 10%;
-	/*margin-right: 5%;*/
-	margin-bottom: 45vh;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding: 5% 10%; /*top-bottom, left-right */
 	background-color: white;
-	/*border: 0.5px solid #fff;*/
 }
 
 #about h2{
 	color: black;
 	font-size: 40px;
-	margin-bottom: 5%;
-
+	margin-bottom: 1.5vh;
 	text-transform: uppercase;
 	font-weight: lighter;
 	letter-spacing: 0.1em;
+	text-align: center;
+}
+
+#about p {
+	margin-top: 4vh;
+	color: black;
+	font-size: 20px;
+	width: 55%;
+	float: left;
+	/*text-align: center;*/
+}
+
+#about img{
+	transform: rotate(90deg);
+	float: left; 
+	margin-top: 0%;
+	margin-left: 10%;
+	height: 30%;
+	width: 30%;
+	float: left;
+	border-radius: 200px;
 }
 
 .side{
@@ -194,22 +222,50 @@ ul li a:hover{
 	float: left;
 }
 
-#about p {
-	color: black;
-	font-size: 20px;
-	width: 50%;
-	float: left;
+#education{
+	display: inline-block;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+	margin-top: 0vh; /*Increase for water background */
+	width: 105%;
+	padding: 5% 10%; /*top-bottom, left-right */
+	background-color: #eeeeee;
 }
 
-#about img{
-	transform: rotate(90deg);
-	float: left; 
-	margin-top: 0%;
-	margin-left: 14%;
-	height: 30%;
-	width: 30%;
-	float: left;
-	border-radius: 200px;
+/* EDUCATION */
+#education h2{
+	color: black;
+	font-size: 40px;
+	margin-bottom: 1.5vh;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 0.1em;
+}
+
+/* THE OHIO STATE UNIVERSITY */
+#education h3{
+	color: black;
+	font-size: 25px;
+	margin-bottom: 1.5vh;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+/* CSE */
+#education h4{
+	color: black;
+	/*font-size: 40px;*/
+	margin-bottom: 1.5vh;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+}
+
+#education p {
+	color: black;
+	font-size: 20px;
+/*	width: 50%;*/
 }
 
 
