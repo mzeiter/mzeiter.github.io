@@ -31,14 +31,47 @@ body{
 	margin: 15px;
 }
 
+.active{
+	background-color: #fff;
+	color: #000;
+}
+
+
+@import "compass/css3";
+#nav-bar{
+	position: fixed;
+	display: inline-block;
+	z-index: 1000;
+	float: left;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	/*background-color: #244475;*/
+	background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/blue_water.jpg);
+	padding-bottom: 20px;
+}
+
+#nav-bar.is-visible{
+	opacity: 1;
+    -webkit-transform: translate(0,0);
+    -webkit-transition: -webkit-transform .2s,background .3s,color .3s;
+}
+
+#nav-bar.is-hidden {
+    opacity: 0;
+    -webkit-transform: translate(0,-60px);
+    -webkit-transition: -webkit-transform .2s,background .3s,color .3s,opacity 0 .3s;
+  	}
+
 #nav-bar ul{
 	display: inline-block;
 	flex-wrap: wrap;
 	list-style-type: none;
 	margin-top: 25px;
-	padding: 5px 20px;
+	padding: 0px 20px; /*top-bottom, left-right */
 	/*background-color: black;*/
-	background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/blue_water.jpg);
+	/*background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/blue_water.jpg);*/
 }
 
 ul li{
@@ -58,11 +91,6 @@ ul li a:hover{
 	color: #000;
 }
 
-.active{
-	background-color: #fff;
-	color: #000;
-}
-
 #nav-bar img{
 	float: left;
 	width: 100px;
@@ -70,32 +98,6 @@ ul li a:hover{
 	margin-right: 50%;
 	margin-left: 2%;
 }
-
-@import "compass/css3";
-#nav-bar{
-	position: fixed;
-	display: inline-block;
-/*	max-width: 1200px;
-*/	z-index: 1000;
-	float: left;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	/*background-color: #244475;*/
-}
-
-#nav-bar.is-visible{
-	opacity: 1;
-    -webkit-transform: translate(0,0);
-    -webkit-transition: -webkit-transform .2s,background .3s,color .3s;
-}
-
-#nav-bar.is-hidden {
-    opacity: 0;
-    -webkit-transform: translate(0,-60px);
-    -webkit-transition: -webkit-transform .2s,background .3s,color .3s,opacity 0 .3s;
-  	}
 
 .title{
 	display: flex;
@@ -164,7 +166,7 @@ ul li a:hover{
     margin-right: 42%;
     height: 3px;
     margin-bottom: 2vh;
-    background-color: red;
+    background-color: #ccc;
 }
 
 /*Line used under "EDUCATION"*/
@@ -175,7 +177,7 @@ ul li a:hover{
     margin-right: 42%;
     height: 3px;
     margin-bottom: 5vh;
-    background-color: red;
+    background-color: white;
 }
 
 /*Line used under "EXPERIENCE"*/
@@ -186,7 +188,7 @@ ul li a:hover{
     margin-right: 42%;
     height: 3px;
     margin-bottom: 8vh;
-    background-color: red;
+    background-color: #ccc;
 }
 
 /*Line used under "PROJECTS"*/
@@ -197,7 +199,7 @@ ul li a:hover{
     margin-right: 43%;
     height: 3px;
     margin-bottom: 8vh;
-    background-color: red;	
+    background-color: white;	
 }
 
 /*Line used under "LETS GET IN TOUCH"*/
@@ -207,8 +209,8 @@ ul li a:hover{
     margin-left: 37%;
     margin-right: 37%;
     height: 3px;
-    margin-bottom: 4vh;
-    background-color: red;	
+    margin-bottom: 2vh;
+    background-color: #ccc;	
 }
 
 #about{
@@ -469,25 +471,26 @@ ul li a:hover{
 #contact p{
 	color: black;
 	font-size: 20px;
-	width: 60%;
-	padding: 5% 20%; /*top-bottom, left-right */
+	width: 40%;
+	padding: 5% 30%; /*top-bottom, left-right */
 }
 
 .info a{
 	text-decoration: none;
-	color: white;
-	background-color: #3A4484;
+	color: black;
+	background-color: #fff;
 	padding: 5px 20px;
 	border: 1px solid transparent;
 	text-align: center;
 	width: 100%;
 	border: 0.5px solid #fff;
 	transition: 0.6s ease;
+	border: 0.5px solid black;
 }
 
 .info a:hover{
-	background-color: white;
-	color: black;
+	background-color: grey;
+	color: white;
 	border: 0.5px solid black;
 }
 
@@ -504,7 +507,7 @@ ul li a:hover{
 /*	margin-top: 10vh;*/
 	padding-top: 3vh;
 	padding-bottom: 3vh;
-	background-color: #3A4484;
+	/*background-color: #3A4484;*/
 }
 
 #footer p{
@@ -525,7 +528,7 @@ ul li a:hover{
 
 .social_media{
 	position: fixed;
-	top: 95%;
+	top: 96%;
 	left: 8%;
 	transform: translate(-50%, -50%);
 }
