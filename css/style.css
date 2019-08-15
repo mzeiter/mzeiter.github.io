@@ -208,6 +208,17 @@ ul li a:hover{
     background-color: #215D81;	
 }
 
+/*Line used under each job and project*/
+.line6{
+	display: block;
+    width: 5%;
+    margin-left: 47.5%;
+    margin-right: 47.5%;
+    height: 3px;
+    margin-bottom: 8vh;
+    background-color: #215D81;	
+}
+
 #about{
 	display: inline-block;
 	flex-wrap: wrap;
@@ -338,6 +349,12 @@ ul li a:hover{
 	letter-spacing: 0.1em;
 }
 
+/* COMPANY NAME */
+#experience a{
+	text-decoration: none;
+	color: black;
+}
+
 /* DATE */
 #experience h5{
 	color: black;
@@ -395,6 +412,13 @@ ul li a:hover{
 	font-weight: bold;
 	letter-spacing: 0.1em;
 }
+
+/* HYPERLINKE FOR PROJECT */
+#projects a{
+	text-decoration: none;
+	color: black; 
+}
+
 /* SKILLS USED */
 #projects h4{
 	color: black;
@@ -422,7 +446,7 @@ ul li a:hover{
 }
 
 #projects .dash-app-pres{
-	margin-left: 100px;
+	/*margin-left: 100px;*/
 	width: 425px;
 	height: 250px;
 }
