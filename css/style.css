@@ -200,6 +200,17 @@ ul li a:hover{
     background-color: red;	
 }
 
+/*Line used under "LETS GET IN TOUCH"*/
+.line5{
+	display: block;
+    width: 26%;
+    margin-left: 37%;
+    margin-right: 37%;
+    height: 3px;
+    margin-bottom: 4vh;
+    background-color: red;	
+}
+
 #about{
 	display: inline-block;
 	flex-wrap: wrap;
@@ -426,26 +437,6 @@ ul li a:hover{
 	height: 250px;
 }
 
-/* --- */
-#projects h5{
-	color: black;
-	margin-bottom: 1.5vh;
-	text-transform: uppercase;
-	font-weight: normal;
-	font-size: 16px;
-	letter-spacing: 0.1em;
-}
-
-/* --- */
-#projects h6{
-	color: black;
-	margin-bottom: 1.5vh;
-	text-transform: uppercase;
-	font-weight: normal;
-	font-size: 14px;
-	letter-spacing: 0.1em;
-}
-
 #projects p {
 	color: black;
 	font-size: 20px;
@@ -458,29 +449,28 @@ ul li a:hover{
 	flex-wrap: wrap;
 	align-items: center;
 	text-align: center;
-	margin-top: 55vh;
-	padding-left: 30%;
-	padding-right: 30%;
-	margin-bottom: 45vh;
-	width: 65%;
+	margin-top: 0vh; /*Increase for water background */
+	width: 105%;
+	padding: 5% 10%; /*top-bottom, left-right */
+	background-color: #fff;
 }
 
+/* LET'S GET IN TOUCH */
 #contact h2{
-	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-	color: #fff;
-	font-size: 35px;
-	margin-bottom: 5%;
-	text-align: center;
-	font-weight: 300;
-	letter-spacing: 0.1em;
+	color: black;
+	font-size: 40px;
+	margin-bottom: 1.5vh;
 	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 0.1em;
 }
+
 
 #contact p{
-	color: #fff;
+	color: black;
 	font-size: 20px;
-	float: left;
-	margin-bottom: 5%;
+	width: 60%;
+	padding: 5% 20%; /*top-bottom, left-right */
 }
 
 .info a{
@@ -498,6 +488,7 @@ ul li a:hover{
 .info a:hover{
 	background-color: white;
 	color: black;
+	border: 0.5px solid black;
 }
 
 
@@ -510,9 +501,9 @@ ul li a:hover{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	margin-top: 10vh;
-	padding-top: 4vh;
-	padding-bottom: 4vh;
+/*	margin-top: 10vh;*/
+	padding-top: 3vh;
+	padding-bottom: 3vh;
 	background-color: #3A4484;
 }
 
