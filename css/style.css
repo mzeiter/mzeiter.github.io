@@ -399,8 +399,30 @@ ul li a:hover{
 	letter-spacing: 0.1em;
 }
 
-#projects img{
+#projects .mz-weather{
+	width: 200px;
+	height: 200px;
+}
+
+#projects .weather-app{
+	margin-left: 100px;
+	width: 140px;
+	height: 250px;
+}
+
+#projects .dash-app{
 	width: 500px;
+	height: 250px;
+}
+
+#projects .dash-app-pres{
+	margin-left: 100px;
+	width: 425px;
+	height: 250px;
+}
+
+#projects .website{
+	width: 550px;
 	height: 250px;
 }
 
