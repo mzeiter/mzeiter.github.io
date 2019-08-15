@@ -379,7 +379,7 @@ ul li a:hover{
 	color: black;
 	font-size: 20px;
 	width: 60%;
-	padding: 5% 20%; /*top-bottom, left-right */
+	padding: 5% 20% 8vh; /*top, left-right, bottom */
 }
 
 #projects{
@@ -460,7 +460,7 @@ ul li a:hover{
 	color: black;
 	font-size: 20px;
 	width: 60%;
-	padding: 5% 20%; /*top-bottom, left-right */
+	padding: 5% 20% 8vh; /*top, left-right, bottom */
 }
 
 #contact{
