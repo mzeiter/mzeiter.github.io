@@ -189,6 +189,17 @@ ul li a:hover{
     background-color: red;
 }
 
+/*Line used under "PROJECTS"*/
+.line4{
+	display: block;
+    width: 14%;
+    margin-left: 43%;
+    margin-right: 43%;
+    height: 3px;
+    margin-bottom: 8vh;
+    background-color: red;	
+}
+
 #about{
 	display: inline-block;
 	flex-wrap: wrap;
@@ -342,6 +353,78 @@ ul li a:hover{
 }
 
 #experience p {
+	color: black;
+	font-size: 20px;
+	width: 60%;
+	padding: 5% 20%; /*top-bottom, left-right */
+}
+
+#projects{
+	display: inline-block;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+	margin-top: 0vh; /*Increase for water background */
+	width: 105%;
+	padding: 5% 10%; /*top-bottom, left-right */
+	background-color: #eeeeee;
+}
+
+/* PROJECTS */
+#projects h2{
+	color: black;
+	font-size: 40px;
+	margin-bottom: 1.5vh;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 0.1em;
+}
+
+/* NAME OF PROJECT */
+#projects h3{
+	color: black;
+	font-size: 25px;
+	margin-bottom: 1.5vh;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+/* SKILLS USED */
+#projects h4{
+	color: black;
+	margin-bottom: 1.5vh;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+}
+
+#projects img{
+	width: 500px;
+	height: 250px;
+}
+
+/* --- */
+#projects h5{
+	color: black;
+	margin-bottom: 1.5vh;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 16px;
+	letter-spacing: 0.1em;
+}
+
+/* --- */
+#projects h6{
+	color: black;
+	margin-bottom: 1.5vh;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+}
+
+#projects p {
 	color: black;
 	font-size: 20px;
 	width: 60%;
