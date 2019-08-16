@@ -351,10 +351,15 @@ ul li a:hover{
 	letter-spacing: 0.1em;
 }
 
-/* COMPANY NAME */
+/* COMPANY NAME hyperlink*/
 #experience a{
 	text-decoration: none;
 	color: black;
+}
+
+#experience a:hover{
+	text-decoration: none;
+	color: #ccc;
 }
 
 /* DATE */
