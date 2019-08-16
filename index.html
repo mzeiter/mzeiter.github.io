@@ -21,60 +21,9 @@
 
 <script type="text/javascript">
 
-
-// $(document).ready(function(){
-
-// /** ===========================================
-//     Hide / show the master navigation menu
-// ============================================ */
-
-//   // console.log('Window Height is: ' + $(window).height());
-//   // console.log('Document Height is: ' + $(document).height());
-  
-//    console.log('Window Height is: ' + $(window).height());
-//   console.log('Document Height is: ' + $(document).height());
-
-//   var previousScroll = 0;
-
-//   $(window).scroll(function(){
-
-//     var currentScroll = $(this).scrollTop();
-
-//     /*
-//       If the current scroll position is greater than 0 (the top) AND the current scroll position is less than the document height minus the window height (the bottom) run the navigation if/else statement.
-//     */
-//     if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()){
-//       /*
-//         If the current scroll is greater than the previous scroll (i.e we're scrolling down the page), hide the nav.
-//       */
-//       if (currentScroll > previousScroll){
-//         window.setTimeout(hideNav, 300);
-//       /*
-//         Else we are scrolling up (i.e the previous scroll is greater than the current scroll), so show the nav.
-//       */
-//       } else {
-//         window.setTimeout(showNav, 300);
-//       }
-//       /* 
-//         Set the previous scroll value equal to the current scroll.
-//       */
-//       previousScroll = currentScroll;
-//     }
-
-//   });
-
-//   function hideNav() {
-//     $("[data-nav-status='toggle']").removeClass("is-visible").addClass("is-hidden");
-//   }
-//   function showNav() {
-//     $("[data-nav-status='toggle']").removeClass("is-hidden").addClass("is-visible");
-//   }
-
-
-
 $(window).scroll(function() {
 		var scrollDistance = $(window).scrollTop();
-		console.log(scrollDistance);
+		// console.log(scrollDistance);
 		scrollDistance = scrollDistance + 460;
 	
 		// Assign active class to nav links while scolling
@@ -144,9 +93,9 @@ $(window).scroll(function() {
 			intern at American Chemical Society, continuing to improve my software development skills. I love
 			coding because it allows me the freedom to create almost anything that comes to mind.
 			<br> <br>
-			While I'm not in front of a computer, some of my favorite hobbies are playing soccer, biking, cooking, and making coffee. I have an espresso machine at home that I use to experiment with different variations of lattes, macchiatos, and more. Alongside the dream of being a successful software engineer, another goal of mine is to open my own coffee shop one day!
+			While I'm not in front of a computer, some of my favorite activities include playing soccer, biking, cooking, and making coffee. I have an espresso machine at home that I use to experiment with different variations of lattes, macchiatos, and more. Alongside the dream of being a successful software engineer, another goal of mine is to open my own coffee shop one day!
 			</p>
-			<img src="images/mara.JPEG"/>
+			<img src="images/me.JPG"/>
 		</div>
 		
 	</div>

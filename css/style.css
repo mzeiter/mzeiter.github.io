@@ -245,15 +245,17 @@ ul li a:hover{
 	font-size: 20px;
 	width: 55%;
 	float: left;
+	margin-left: 5%;
 }
 
+/* Pic of me */
 #about img{
-	transform: rotate(90deg);
+	/*transform: rotate(90deg);*/
 	float: left; 
 	margin-top: 0%;
 	margin-left: 10%;
-	height: 30%;
-	width: 30%;
+	height: 375px;
+	width: 250px;
 	float: left;
 	border-radius: 200px;
 }
